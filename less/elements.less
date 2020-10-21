@@ -1,0 +1,65 @@
+//Main Vars
+@base-url:     "../images";
+@border-color: #e5e5e5;
+@border-news-color: #b1b1b1;
+@item-bg: #bd6445;
+@icon-color: #81b385;
+@brand-success: #00A84B;
+@state-success-text: @brand-success;
+@brand-primary: @brand-success;
+@brand-default: #EBEBEB;
+@btn-default-bg: #EBEBEB;
+@brand-orange: #FF7D19;
+@brand-danger: #eb7591;
+@state-danger-text:@brand-danger;
+@brand-warning:  @brand-orange ;
+@brand-info: #3979C3;
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+
+
+
+@btn-info-bg:  @brand-info;
+@btn-info-border:  darken(@brand-info, 5%);
+
+.btn-lg{
+    border-radius: 0;
+}
+//Mixins
+.font(@fontName,@fontFile) {
+    @font-face	{
+        font-family: "@{fontName}";
+        src: url("../fonts/@{fontFile}/@{fontName}.eot");
+        src: url("../fonts/@{fontFile}/@{fontName}.eot?#iefix") format("embedded-opentype"),
+            url("../fonts/@{fontFile}/@{fontName}.woff") format("woff"),
+            url("../fonts/@{fontFile}/@{fontName}.ttf") format("truetype"),
+            url("../fonts/@{fontFile}/@{fontName}.svg#svgFontName") format("svg");
+    }
+}
+::selection {
+    background: @brand-success;
+    color: #fff;
+}
+::-moz-selection {
+    background: @brand-success;
+    color: #fff;
+}
+button, a{
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+button,label{
+    cursor: pointer;
+    outline: none;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+}
+.inlinePos(@display,@vertAlign){
+    display:@display;
+    vertical-align:@vertAlign;
+}
