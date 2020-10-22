@@ -1,0 +1,14 @@
+//Base
+@import 'variables';
+@import 'elements';
+@import 'fonts';
+@import 'buttons';
+@import 'icons';
+@import 'loader';
+
+//Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//Pages
+@import 'pages/home';

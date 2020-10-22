@@ -1,0 +1,309 @@
+
+.hero-banner {
+  background: url("../images/hero.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  position: relative;
+  &:before {
+    content: '';
+    background: rgba(#32343d, 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.hero-header {
+  font-family: $md-font;
+  font-size: 4.286rem;
+  line-height: 1.2;
+  color: #a8aca5;
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 250px 0 120px 0;
+  position: relative;
+  z-index: 1;
+
+  p {
+    font-size: 1.714rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+  }
+}
+
+.text-green {
+  color: #829957;
+}
+
+.text-lg {
+  font-size: 1.429rem;
+}
+
+.section {
+  padding: 85px 0;
+}
+.section-sm{
+  padding: 50px 0;
+}
+/*Start Brands Banner*/
+.brand-carousel {
+  margin-top: 60px;
+}
+.brands-banner p{
+  max-width: 65%;
+  margin: auto;
+}
+/*End Brands Banner*/
+
+/*Start Benefit Banner*/
+.benefit-banner{
+  margin-top: 130px;
+}
+.benefit-item{
+  border: 1px solid #ededed;
+  padding: 70px 11px 15px;
+  position: relative;
+  height: 240px;
+  max-width: 250px;
+  margin-right: 15px;
+
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+}
+.benefit-icons{
+  position: absolute;
+  top: -42px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*End Benefit Banner*/
+
+//Start Process Banner
+.process-banner{
+  background: url("../images/bg2.jpg") no-repeat;
+  background-size: cover;
+}
+.process-item li{
+  font-family: $rm-font;
+  font-size: 18px;
+  color: #ffffff;
+  position: relative;
+  max-width: 26%;
+  padding-right: 10px;
+  margin-bottom: 25px;
+
+  &:after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    right: -13px;
+    border: 2px solid $brand-green;
+  }
+
+}
+.process-item div{
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    left: 13px;
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 2px solid $brand-green;
+  }
+}
+
+//End Process Banner
+
+//Start Area Banner
+.area-banner{
+  flex-wrap: wrap;
+}
+.area-banner figcaption{
+  color: #a8aca5;
+  text-transform: uppercase;
+  font-size: 1.286rem;
+  font-family: $md-font;
+  margin: 15px 0;
+}
+.area-img{
+  position: relative;
+  overflow: hidden;
+}
+.figure-hover{
+  background: rgba(#ffffff, 95%);
+  border: 8px solid $brand-blue;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+  transition: all 0.2s ease-out;
+  transform: translateY(100%);
+  opacity: 0;
+
+  .btn{
+    width: 100%;
+  }
+}
+.area-item{
+  margin-bottom: 10px;
+}
+.area-item:hover{
+  .figure-hover{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+//End Area Banner
+
+
+//Start About Us Banner
+.aboutUs-banner{
+  background: url("../images/bg3.jpg") no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.img-banner{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    z-index: 1;
+    border: 5px solid rgba(#ffffff, 0.5);
+  }
+}
+.quote-img-banner{
+  &:before{
+    border-color: rgba($brand-green, 0.5);
+  }
+
+}
+.quote-lines{
+  position: relative;
+  width: 133px;
+  display: inline-block;
+  &:before, &:after{
+    content: '';
+    background: rgba($brand-green, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 195px;
+    height: 2px;
+  }
+  &:before{
+    margin-right: 40px;
+    right: 100%;
+  }
+  &:after{
+    margin-left: 40px;
+    left: 100%;
+  }
+}
+.quote-img{
+  border-radius: 999px;
+}
+.quote-text{
+  max-width: 87%;
+  margin: auto;
+}
+.quote-headline{
+  font-size: 2.143rem;
+  font-family: $lt-font;
+  margin: 20px 0;
+}
+//End About Us Banner
+
+//Start Media Banner
+.media-banner{
+  flex-wrap: wrap;
+}
+.media-img{
+  margin-bottom: 18px;
+}
+.media-headline{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.media-details{
+  border-top: 1px solid #ebebeb;
+  padding-top: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.media-details-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:first-child{
+    margin-right: 25px;
+  }
+
+  i{
+    margin-right: 8px;
+  }
+}
+.media-item{
+  max-width: 32%;
+}
+.media-item:not(:last-child){
+  margin-right: 15px;
+}
+.media-item p{
+  font-size: 16px;
+}
+//End Media Banner
+
+
+//Start Team Banner
+.team-headline{
+  color: $brand-blue;
+  font-size: 1.429rem;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+//End Team Banner
+
+//Start Action Banner
+.action-banner{
+  background: url("../images/bg4.jpg") no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+//End Action Banner

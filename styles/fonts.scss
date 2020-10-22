@@ -1,0 +1,16 @@
+@mixin font($fontName, $fontNameFile,$fontNameFolder) {
+  @font-face	{
+    font-family: $fontName;
+    src: url("/fonts/#{$fontNameFolder}/#{$fontNameFile}.eot");
+    src: url("/fonts/#{$fontNameFolder}/#{$fontNameFile}.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/#{$fontNameFolder}/#{$fontNameFile}.woff") format("woff"),
+    url("/fonts/#{$fontNameFolder}/#{$fontNameFile}.ttf") format("truetype"),
+    url("/fonts/#{$fontNameFolder}/#{$fontNameFile}.svg#svgFontName") format("svg");
+  }
+}
+
+@include font("HelveticaNeueLTCom-Th", "HelveticaNeueLTCom-Th", Helvetica);
+@include font("HelveticaNeueLTCom-Md", "HelveticaNeueLTCom-Md", Helvetica);
+@include font("HelveticaNeueLTCom-Lt", "HelveticaNeueLTCom-Lt", Helvetica);
+@include font("HelveticaNeueLTCom-Rm", "HelveticaNeueLTCom-Rm", Helvetica);
+@include font("HelveticaNeueLTCom-Bd", "HelveticaNeueLTCom-Rm", Helvetica);

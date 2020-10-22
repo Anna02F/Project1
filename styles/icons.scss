@@ -1,0 +1,46 @@
+.icon-round-b{
+  width: 83px;
+  height: 83px;
+  background: $brand-blue-dark;
+  text-align: center;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-list{
+  background: url("#{$icons-dir}/list.png");
+  width: 62px;
+  height: 50px;
+  display: inline-block;
+}
+.icon-diamond{
+  background: url("#{$icons-dir}/diamond.png");
+  width: 62px;
+  height: 50px;
+  display: inline-block;
+}
+.icon-wallet{
+  background: url("#{$icons-dir}/wallet.png");
+  width: 62px;
+  height: 50px;
+  display: inline-block;
+}
+.icon-badge{
+  background: url("#{$icons-dir}/badge.png");
+  width: 62px;
+  height: 50px;
+  display: inline-block;
+}
+.icon-calendar{
+  background: url("#{$icons-dir}/calendar.png");
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.icon-chat{
+  background: url("#{$icons-dir}/chat.png");
+  width: 19px;
+  height: 17px;
+  display: inline-block;
+}

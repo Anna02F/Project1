@@ -1,0 +1,32 @@
+.btn{
+  font-family: $lt-font;
+  padding: 9px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn-wh{
+  border: 1px solid #fff;
+  background: none;
+  color: #ffffff;
+}
+.btn-lg{
+  width: 330px;
+  padding: 17px 20px;
+  display: inline-block;
+  font-size: 20px;
+}
+.btn-green{
+  border: 1px solid #829957;
+  background: rgba(#ffffff, 5%);
+  color: #829957;
+}
+
+.btn-blue{
+  border: 1px solid $brand-blue;
+  background: rgba(#ffffff, 5%);
+  color: $brand-blue;
+}
+.has-bg{
+  background: rgba(#ffffff, 5%);
+}

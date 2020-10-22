@@ -1,0 +1,285 @@
+.loader {
+  background: $brand-green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  overflow: hidden;
+}
+.loader-inner{
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+}
+.loader-span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.loader-span:before, .loader-span:after {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #a8aca5;
+  content: "";
+}
+.loader-span:before {
+  top: 0;
+  right: 0;
+  left: auto;
+  -webkit-animation: drawframeTop 4s linear infinite 0.5s;
+  animation: drawframeTop 4s linear infinite 0.5s;
+}
+.loader-span:after {
+  right: auto;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: drawframeBottom 4s linear infinite 1.5s;
+  animation: drawframeBottom 4s linear infinite 1.5s;
+}
+.loader-inner:before, .loader-inner:after {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #a8aca5;
+  content: "";
+}
+.loader-inner:before {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: drawframeRight 4s linear infinite;
+  animation: drawframeRight 4s linear infinite;
+}
+.loader-inner:after {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  -webkit-animation: drawframeLeft 4s linear infinite 1s;
+  animation: drawframeLeft 4s linear infinite 1s;
+}
+@-webkit-keyframes drawframeTop {
+  0% {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  12.5% {
+    right: auto;
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    right: 0;
+    left: auto;
+    width: 0%;
+  }
+  62.5% {
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+  100% {
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+}
+@keyframes drawframeTop {
+  0% {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  12.5% {
+    right: auto;
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    right: 0;
+    left: auto;
+    width: 0%;
+  }
+  62.5% {
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+  100% {
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+}
+@-webkit-keyframes drawframeBottom {
+  0% {
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+  12.5% {
+    right: 0;
+    left: auto;
+    width: 0%;
+  }
+  50% {
+    right: auto;
+    left: 0;
+    width: 0%;
+  }
+  62.5% {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+}
+@keyframes drawframeBottom {
+  0% {
+    right: 0;
+    left: auto;
+    width: 100%;
+  }
+  12.5% {
+    right: 0;
+    left: auto;
+    width: 0%;
+  }
+  50% {
+    right: auto;
+    left: 0;
+    width: 0%;
+  }
+  62.5% {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+}
+@-webkit-keyframes drawframeRight {
+  0% {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+  }
+  12.5% {
+    top: 0;
+    bottom: auto;
+    height: 0%;
+  }
+  50% {
+    top: auto;
+    bottom: 0;
+    height: 0%;
+  }
+  62.5% {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  100% {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+}
+@keyframes drawframeRight {
+  0% {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+  }
+  12.5% {
+    top: 0;
+    bottom: auto;
+    height: 0%;
+  }
+  50% {
+    top: auto;
+    bottom: 0;
+    height: 0%;
+  }
+  62.5% {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  100% {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+}
+@-webkit-keyframes drawframeLeft {
+  0% {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  12.5% {
+    top: auto;
+    bottom: 0;
+    height: 0%;
+  }
+  50% {
+    top: 0;
+    bottom: auto;
+    height: 0%;
+  }
+  62.5% {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+  }
+  100% {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+  }
+}
+@keyframes drawframeLeft {
+  0% {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  12.5% {
+    top: auto;
+    bottom: 0;
+    height: 0%;
+  }
+  50% {
+    top: 0;
+    bottom: auto;
+    height: 0%;
+  }
+  62.5% {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+  }
+  100% {
+    top: 0;
+    bottom: auto;
+    height: 100%;
+  }
+}
